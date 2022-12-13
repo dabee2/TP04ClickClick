@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@drawable/bg1"
+    android:id="@+id/main_layout"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/main_tv"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Start 버튼을 눌러주세요"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/main_tv2"
+            android:layout_below="@+id/main_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1/4"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            android:layout_margin="6dp"
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/start_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_below="@+id/main_tv"
+            android:layout_toLeftOf="@id/radio1"
+            android:layout_toRightOf="@id/main_tv2"
+            android:src="@drawable/start" />
+
+        <RadioGroup
+            android:id="@+id/radio1"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/main_tv"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="70dp">
+
+            <RadioButton
+                android:id="@+id/rb1"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="Mode1"
+                android:textStyle="italic|bold"
+                android:checked="true"
+                android:textColor="@color/black"/>
+
+            <RadioButton
+                android:id="@+id/rb2"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="Mode2"
+                android:textStyle="italic|bold"
+
+                android:textColor="@color/black"/>
+
+        </RadioGroup>
+
+
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/lasttv"
+            android:layout_width="300dp"
+            android:layout_height="400dp"
+            android:paddingBottom="45dp"
+            android:layout_gravity="center"
+            android:text=""
+            android:textSize="20dp"
+            android:textStyle="italic|bold"
+            android:textColor="@color/teal_700"
+            android:gravity="center"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/layout_btn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        android:weightSum="4"
+        android:visibility="invisible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/btn01"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/num01"
+                android:layout_weight="1"
+                android:visibility="visible"/>
+
+            <ImageView
+                android:id="@+id/btn02"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/num02"
+                android:layout_weight="1"
+                android:visibility="visible"/>
+
+            <ImageView
+                android:id="@+id/btn03"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/num03"
+                android:visibility="visible"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/btn04"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/num04"
+                android:layout_weight="1"
+                android:visibility="visible"/>
+
+            <ImageView
+                android:id="@+id/btn05"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/num05"
+                android:layout_weight="1"
+                android:visibility="visible"/>
+
+            <ImageView
+                android:id="@+id/btn06"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/num06"
+                android:visibility="visible"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/btn07"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/num07"
+                android:layout_weight="1"
+                android:visibility="visible"/>
+
+            <ImageView
+                android:id="@+id/btn08"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/num08"
+                android:layout_weight="1"
+                android:visibility="visible"/>
+
+            <ImageView
+                android:id="@+id/btn09"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/num09"
+                android:visibility="visible"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/btn10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/num10"
+                android:layout_weight="1"
+                android:visibility="visible"/>
+
+            <ImageView
+                android:id="@+id/btn11"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/num11"
+                android:layout_weight="1"
+                android:visibility="visible"/>
+
+            <ImageView
+                android:id="@+id/btn12"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/num12"
+                android:visibility="visible"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:id="@+id/snackbar_container"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom|center"/>
+
+
+    </FrameLayout>
+
+
+
+
+</LinearLayout>
